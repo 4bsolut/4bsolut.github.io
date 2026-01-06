@@ -1,0 +1,317 @@
+
+    @import url("https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap");
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    
+    :root {
+      /* Footer Twitter link color */
+      --color-1: #ee7344;
+      /* Container background color */
+      --color-2: #fff;
+      /* Body background color */
+      --color-3: #e6603c;
+      /* Font color 1 */
+      --color-4: #303960;
+      /* Font color 2 */
+      --color-5: #30475e;
+      /* Font 1 */
+      --font-1: "Patrick Hand SC", cursive;
+    }
+    
+    html {
+      overflow-x: hidden;
+    }
+    
+    body {
+      font-family: var(--font-1);
+      font-size: 19px;
+      height: 100vh;
+      width: 100vw;
+      background-color: var(--color-3);
+      color: var(--color-5);
+      overflow-x: hidden;
+      display: grid;
+      grid-template-columns: 100%;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='Artboard-5' fill='%234b04bf' fill-opacity='0.25' fill-rule='nonzero'%3E%3Cpath d='M6 18h12V6H6v12zM4 4h16v16H4V4z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    }
+    
+    .wrapper {
+      min-width: 300px;
+      max-width: 780px;
+      width: 100%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-bottom: 38px;
+    }
+    
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      border: 1px solid rgba(0, 0, 0, 0.2);
+      box-shadow: 6px 0 15px rgba(0, 0, 0, 0.4);
+      background-color: var(--color-2);
+      /* If you need all page design activate it */
+      border-radius: 5px;
+    }
+    
+    header {
+      padding: 15px 20px;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    #toggle-menu {
+      list-style-type: none;
+      display: flex;
+      gap: 20px;
+      padding: 5px 0;
+      flex-wrap: wrap;
+    }
+    
+    #toggle-menu li {
+      flex: 1;
+      padding: 3px 10px;
+      outline: 1px solid red;
+      background-color: var(--color-3);
+    }
+    #toggle-menu li a {
+      font-size: 22px;
+      color: var(--color-2);
+    }
+    
+    .visibility-hidden {
+      visibility: hidden;
+    }
+    
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    header a {
+      text-decoration: none;
+      color: var(--color-3);
+      font-weight: bold;
+      font-size: 36px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    button {
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+    }
+    
+    .menu {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .header > div {
+      display: flex;
+      gap: 18px;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .display-none {
+      display: none;
+    }
+    
+    main {
+      padding: 10px 20px;
+      flex: 1;
+    }
+    
+    footer {
+      padding: 10px 20px;
+    }
+    
+    .codepen-footer {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 99;
+      background-color: #232323;
+      color: white;
+      text-align: center;
+      padding: 6px;
+      height: 38px;
+    }
+    .codepen-footer a {
+      color: var(--color-1);
+      text-decoration: none;
+    }
+    
+    .flex-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      flex-wrap: wrap;
+      gap: 10px;
+      position: relative;
+    }
+    
+    .info {
+      flex: 1;
+    }
+    
+    .header-info-container {
+      text-align: center;
+      color: var(--color-4);
+    }
+    
+    .icon {
+      margin: 0 auto;
+      position: relative;
+    }
+    
+    .icon svg {
+      min-width: 200px;
+      width: 100%;
+    }
+    
+    .details-info-container {
+      padding: 10px 20px;
+      font-size: 20px;
+    }
+    .details-info-container p:first-child {
+      font-size: 32px;
+    }
+    .details-info-container p:last-child {
+      margin-block: 10px;
+      line-height: 1.5;
+      min-width: 280px;
+    }
+    
+    .emoji {
+      font-size: 36px;
+    }
+    
+    .bg-robot {
+      background-image: url("../img/ai-robot-2.svg");
+      background-size: cover;
+      opacity: 0.2;
+      width: 60px;
+      height: 60px;
+      position: absolute;
+      top: -2%;
+      left: 10%;
+    }
+    
+    .bg-image {
+      background-image: url("../img/155.svg");
+      background-size: cover;
+      opacity: 0.3;
+      width: 110px;
+      height: 110px;
+      position: absolute;
+      top: -21px;
+      left: 35%;
+    }
+    
+    @keyframes blinker {
+      50% {
+        opacity: 0;
+      }
+    }
+    @keyframes skills {
+      0% {
+        content: "HTML";
+      }
+      25% {
+        content: "CSS";
+      }
+      50% {
+        content: "JS";
+      }
+      75% {
+        content: "React";
+      }
+      100% {
+        content: "Vue";
+      }
+    }
+    .icon::after {
+      content: "";
+      display: block;
+      width: 100px;
+      height: 50px;
+      font-size: 37px;
+      color: var(--color-3);
+      position: absolute;
+      top: 47%;
+      left: 8%;
+      animation: blinker 3s step-end infinite, skills 10s step-end infinite;
+    }
+    
+    @media only screen and (max-width: 621px) {
+      .bg-image {
+        top: 41%;
+        left: 0;
+      }
+    
+      #toggle-menu {
+        gap: 15px;
+      }
+      #toggle-menu a {
+        font-size: 21px;
+      }
+    }
+    @media only screen and (max-width: 520px) {
+      main,
+    footer,
+    header {
+        padding: 10px;
+      }
+    
+      .flex-container {
+        gap: 2px;
+      }
+    
+      .details-info-container {
+        padding: 10px;
+      }
+    
+      #toggle-menu {
+        gap: 10px;
+      }
+    
+      #toggle-menu li {
+        padding: 0 8px;
+      }
+    }
+    @media only screen and (max-width: 420px) {
+      .icon svg {
+        width: 225px;
+      }
+    
+      .bg-image {
+        display: none;
+      }
+    
+      #toggle-menu li {
+        padding: 0 6px;
+      }
+    }
+    @media only screen and (max-width: 320px) {
+      .icon svg {
+        width: 200px;
+      }
+    
+      #toggle-menu li {
+        padding: 0 4px;
+      }
+    }
+      

@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Software Architecture and DevOps | Jorge Requena</title>
+  <meta name="description" content="Software architect and developer for web platforms, mobile apps, and APIs. Spring Boot, FastAPI, Angular, React, Flutter, React Native, and Kubernetes on-prem with Rancher, focused on performance and scale.">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Jorge Requena">
+  <meta name="theme-color" content="#050505">
+  <link rel="canonical" href="https://4bsolut.github.io/">
+  <link rel="stylesheet" href="assets/css/site.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Software Architecture and DevOps | Jorge Requena">
+  <meta property="og:description" content="Architecture plus hands-on development for web platforms, mobile apps, and APIs: Spring Boot, FastAPI, Angular, React, Flutter, React Native, and Kubernetes on-prem with Rancher.">
+  <meta property="og:url" content="https://4bsolut.github.io/">
+  <meta property="og:locale" content="en_US">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "name": "Jorge Requena - Software Architecture",
+        "url": "https://4bsolut.github.io/"
+      },
+      {
+        "@type": "Person",
+        "name": "Jorge Requena",
+        "jobTitle": "Software Architect and DevOps Lead",
+        "url": "https://4bsolut.github.io/",
+        "sameAs": ["https://linkedin.com/in/jorge-requena-567b6121"],
+        "knowsAbout": [
+          "Spring Boot",
+          "FastAPI",
+          "Angular",
+          "React",
+          "Flutter",
+          "React Native",
+          "Kubernetes",
+          "Rancher",
+          "Software architecture",
+          "DevOps",
+          "Observability"
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: 'dark',
+      securityLevel: 'loose',
+      flowchart: { nodeSpacing: 60, rankSpacing: 80, curve: 'basis' },
+      themeVariables: { fontFamily: 'Inter, sans-serif', fontSize: '18px' }
+    });
+  </script>
+  <meta property="og:image" content="https://4bsolut.github.io/assets/img/og-cover.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:alt" content="Software architecture, web platforms, mobile apps, and APIs by Jorge Requena">
+  <meta name="twitter:image" content="https://4bsolut.github.io/assets/img/og-cover.png">
+  <meta name="twitter:image:alt" content="Software architecture, web platforms, mobile apps, and APIs by Jorge Requena">
+</head>
+<body class="hero-gradient antialiased">
+  <nav class="flex items-center justify-between px-6 py-6 max-w-7xl mx-auto">
+    <div class="flex items-center gap-2">
+      <div class="w-9 h-9 bg-yellow-500 rounded-lg flex items-center justify-center font-bold text-black">JR</div>
+      <span class="font-semibold text-lg tracking-tight">Jorge Requena</span>
+    </div>
+    <div class="hidden md:flex gap-6 text-sm text-gray-400">
+      <a href="services/">Services</a>
+      <a href="case-studies/">Case Studies</a>
+      <a href="blog/">Blog</a>
+      <a href="about/">About</a>
+      <a href="contact/">Contact</a>
+    </div>
+    <a href="contact/" class="px-5 py-2 rounded-full border border-gray-700 text-sm btn-outline">Book a call</a>
+  </nav>
+
+  <header class="max-w-5xl mx-auto text-center pt-16 pb-20 px-4">
+    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-yellow-500/30 bg-yellow-500/5 text-yellow-500 text-xs mb-6">
+      <span class="relative flex h-2 w-2">
+        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-yellow-400 opacity-75"></span>
+        <span class="relative inline-flex rounded-full h-2 w-2 bg-yellow-500"></span>
+      </span>
+      Architecture aligned with business and operations
+    </div>
+
+    <h1 class="text-4xl md:text-6xl font-bold mb-6 text-gradient tracking-tight">
+      Software architecture and DevOps for products that scale
+    </h1>
+
+    <p class="text-gray-400 text-lg mb-8 max-w-3xl mx-auto leading-relaxed">
+      I design and build web platforms, mobile apps, and APIs with reliability, performance, and delivery in mind. I help teams modernize or ship products in
+      <strong class="text-gray-200">Spring Boot, FastAPI, Angular, React, Flutter, React Native, and Kubernetes on-prem with Rancher</strong>.
+    </p>
+
+    <div class="flex flex-wrap justify-center gap-4">
+      <a href="case-studies/" class="btn-gold px-8 py-4">View case studies</a>
+      <a href="services/" class="px-8 py-4 btn-outline">Explore services</a>
+    </div>
+  </header>
+
+  <section class="max-w-6xl mx-auto px-4 py-12">
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="glass-card p-6 gold-glow">
+        <p class="section-kicker">Delivery</p>
+        <h2 class="section-title mt-2">From idea to production without friction</h2>
+        <p class="text-gray-400 mt-3">Realistic roadmaps, reliable pipelines, and standards that reduce rework.</p>
+      </div>
+      <div class="glass-card p-6">
+        <p class="section-kicker">Scale</p>
+        <h2 class="section-title mt-2">Architectures built for growth</h2>
+        <p class="text-gray-400 mt-3">Domain-driven patterns, decoupling, and observability for evolving teams.</p>
+      </div>
+      <div class="glass-card p-6">
+        <p class="section-kicker">Operations</p>
+        <h2 class="section-title mt-2">Operational control and security</h2>
+        <p class="text-gray-400 mt-3">Governance, monitoring, and SRE practices for business continuity.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="max-w-6xl mx-auto px-4 py-16" id="services">
+    <div class="flex items-end justify-between flex-wrap gap-6">
+      <div>
+        <p class="section-kicker">Services</p>
+        <h2 class="section-title">End-to-end technical support</h2>
+      </div>
+      <a href="services/" class="text-sm text-gray-400">See details</a>
+    </div>
+    <div class="grid md:grid-cols-2 gap-6 mt-8">
+      <div class="glass-card p-6">
+        <h3 class="text-xl font-semibold mb-2">Architecture and modernization</h3>
+        <p class="text-gray-400">Domain design, monolith migration, API strategy, and safe refactoring.</p>
+      </div>
+      <div class="glass-card p-6">
+        <h3 class="text-xl font-semibold mb-2">Cloud and on-prem platforms</h3>
+        <p class="text-gray-400">Kubernetes on-prem with Rancher, policy guardrails, and observability.</p>
+      </div>
+      <div class="glass-card p-6">
+        <h3 class="text-xl font-semibold mb-2">Web platforms and APIs</h3>
+        <p class="text-gray-400">Spring Boot and FastAPI delivery with clear contracts, security, and performance.</p>
+      </div>
+      <div class="glass-card p-6">
+        <h3 class="text-xl font-semibold mb-2">Web and mobile delivery</h3>
+        <p class="text-gray-400">Angular, React, Flutter, and React Native builds focused on UX, speed, and release cadence.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="max-w-6xl mx-auto px-4 py-16">
+    <p class="section-kicker text-center">Method</p>
+    <h2 class="section-title text-center mb-10">End-to-end delivery cycle</h2>
+    <div class="glass-card p-6 overflow-x-auto">
+      <div class="mermaid block md:hidden w-full">
+flowchart TD
+classDef step fill:#ffffff,fill-opacity:0.04,stroke:#fbbf24,stroke-width:2px,color:#ffffff;
+classDef gate fill:transparent,stroke:#fbbf24,stroke-width:2px,color:#ffffff;
+
+A[Discovery]:::step --> B[Domain design]:::step
+B --> C{Quality}:::gate
+C -->|Pass| D[CI/CD]:::step
+D --> E{Release}:::gate
+E --> F[Kubernetes]:::step
+F --> G{Observability}:::gate
+G -->|Healthy| H[Scale]:::step
+      </div>
+
+      <div class="mermaid hidden md:block w-full min-w-[980px]">
+flowchart LR
+classDef step fill:#ffffff,fill-opacity:0.04,stroke:#fbbf24,stroke-width:2px,color:#ffffff;
+classDef gate fill:transparent,stroke:#fbbf24,stroke-width:2px,color:#ffffff;
+
+A[Discovery]:::step --> B[Domain design]:::step
+B --> C{Quality}:::gate
+C -->|Pass| D[CI/CD]:::step
+D --> E{Release}:::gate
+E --> F[Kubernetes]:::step
+F --> G{Observability}:::gate
+G -->|Healthy| H[Scale]:::step
+      </div>
+    </div>
+  </section>
+
+  <section class="max-w-6xl mx-auto px-4 py-16" id="case-studies">
+    <div class="flex items-end justify-between flex-wrap gap-6">
+      <div>
+        <p class="section-kicker">Case studies</p>
+        <h2 class="section-title">Measured outcomes in key technologies</h2>
+      </div>
+      <a href="case-studies/" class="text-sm text-gray-400">View all</a>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-6 mt-8">
+      <a href="case-studies/spring-boot/" class="glass-card p-6">
+        <h3 class="text-xl font-semibold mb-2">Spring Boot for digital banking</h3>
+        <p class="text-gray-400">Lower latency and higher throughput with a hexagonal architecture.</p>
+      </a>
+      <a href="case-studies/fastapi/" class="glass-card p-6">
+        <h3 class="text-xl font-semibold mb-2">FastAPI with full observability</h3>
+        <p class="text-gray-400">Distributed tracing and stable SLAs for critical APIs.</p>
+      </a>
+      <a href="case-studies/angular/" class="glass-card p-6">
+        <h3 class="text-xl font-semibold mb-2">Angular for 24/7 operations</h3>
+        <p class="text-gray-400">UI performance budget, lazy loading, and reusable design systems.</p>
+      </a>
+      <a href="case-studies/flutter/" class="glass-card p-6">
+        <h3 class="text-xl font-semibold mb-2">Flutter for mobile logistics</h3>
+        <p class="text-gray-400">Offline-first apps with secure sync and continuous delivery.</p>
+      </a>
+      <a href="case-studies/react/" class="glass-card p-6">
+        <h3 class="text-xl font-semibold mb-2">React for analytics platforms</h3>
+        <p class="text-gray-400">Component-driven UI with performance budgets and clean state management.</p>
+      </a>
+      <a href="case-studies/react-native/" class="glass-card p-6">
+        <h3 class="text-xl font-semibold mb-2">React Native for field teams</h3>
+        <p class="text-gray-400">Unified mobile experience with reliable offline and sync workflows.</p>
+      </a>
+      <a href="case-studies/kubernetes-rancher/" class="glass-card p-6 md:col-span-2">
+        <h3 class="text-xl font-semibold mb-2">Kubernetes on-prem with Rancher</h3>
+        <p class="text-gray-400">Resilient, governed clusters ready for compliance requirements.</p>
+      </a>
+    </div>
+  </section>
+
+  <section class="max-w-6xl mx-auto px-4 py-16" id="stack">
+    <p class="section-kicker text-center">Stack</p>
+    <h2 class="section-title text-center mb-4">Core technologies and practices</h2>
+    <p class="text-center text-gray-400 mb-10">Hands-on delivery for web platforms, mobile apps, and APIs with reliable operations.</p>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="glass-card p-6">
+        <h3 class="text-lg font-semibold mb-3">Backend</h3>
+        <ul class="text-gray-400 text-sm space-y-2">
+          <li>Spring Boot, Java 17, hexagonal architecture</li>
+          <li>FastAPI, async IO, OpenAPI contracts</li>
+          <li>Messaging, events, resiliency patterns</li>
+        </ul>
+      </div>
+      <div class="glass-card p-6">
+        <h3 class="text-lg font-semibold mb-3">Platform</h3>
+        <ul class="text-gray-400 text-sm space-y-2">
+          <li>Kubernetes, Rancher, GitOps</li>
+          <li>CI/CD with reproducible pipelines</li>
+          <li>Observability: metrics, logs, traces</li>
+        </ul>
+      </div>
+      <div class="glass-card p-6">
+        <h3 class="text-lg font-semibold mb-3">Frontend and mobile</h3>
+        <ul class="text-gray-400 text-sm space-y-2">
+          <li>Angular and React for web platforms</li>
+          <li>Flutter and React Native for mobile apps</li>
+          <li>Design systems and UX consistency</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="max-w-6xl mx-auto px-4 py-16" id="blog">
+    <div class="flex items-end justify-between flex-wrap gap-6">
+      <div>
+        <p class="section-kicker">Blog</p>
+        <h2 class="section-title">Technical notes and proven patterns</h2>
+      </div>
+      <a href="blog/" class="text-sm text-gray-400">Read all</a>
+    </div>
+    <div class="grid md:grid-cols-3 gap-6 mt-8">
+      <a href="blog/hexagonal-architecture-spring-boot/" class="glass-card p-6">
+        <p class="tag mb-3">Spring Boot</p>
+        <h3 class="text-lg font-semibold mb-2">Hexagonal architecture in real projects</h3>
+        <p class="text-gray-400 text-sm">Domain separation, ports, and adapters to scale engineering teams.</p>
+      </a>
+      <a href="blog/fastapi-observability-playbook/" class="glass-card p-6">
+        <p class="tag mb-3">FastAPI</p>
+        <h3 class="text-lg font-semibold mb-2">Observability playbook for APIs</h3>
+        <p class="text-gray-400 text-sm">Metrics, tracing, and structured logging for demanding SLAs.</p>
+      </a>
+      <a href="blog/kubernetes-rancher-onprem/" class="glass-card p-6">
+        <p class="tag mb-3">Kubernetes</p>
+        <h3 class="text-lg font-semibold mb-2">Running Rancher on-prem with confidence</h3>
+        <p class="text-gray-400 text-sm">Hardening, monitoring, and daily operations for critical clusters.</p>
+      </a>
+    </div>
+  </section>
+
+  <section class="max-w-4xl mx-auto px-4 py-16 text-center" id="contact">
+    <h2 class="section-title">Ready to strengthen your platform?</h2>
+    <p class="text-gray-400 mt-4 mb-8">
+      Book a conversation to review architecture, risks, and next steps. Response within 48 hours.
+    </p>
+    <a href="contact/" class="btn-gold px-10 py-4 inline-block">Get in touch</a>
+  </section>
+
+  <footer class="max-w-6xl mx-auto px-4 py-12 border-t border-gray-900">
+    <div class="flex flex-wrap justify-between gap-6">
+      <div>
+        <h3 class="text-lg font-semibold">Jorge Requena</h3>
+        <p class="text-gray-500 text-sm">Software architecture, DevOps, and scalable platforms.</p>
+      </div>
+      <div class="text-sm text-gray-400 space-y-2">
+        <a href="services/" class="block">Services</a>
+        <a href="case-studies/" class="block">Case studies</a>
+        <a href="blog/" class="block">Blog</a>
+      </div>
+      <div class="text-sm text-gray-400 space-y-2">
+        <a href="about/" class="block">About</a>
+        <a href="contact/" class="block">Contact</a>
+        <a href="robots.txt" class="block">robots.txt</a>
+      </div>
+    </div>
+    <div class="mt-10 text-gray-600 text-sm">Copyright (c) <span data-year></span> Jorge Requena. All rights reserved.</div>
+  </footer>
+
+  <script src="assets/js/site.js"></script>
+</body>
+</html>
